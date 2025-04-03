@@ -1,0 +1,9 @@
+os
+json
+pytz==2023.3
+requests==2.31.0       # For making HTTP requests to the Nightscout server
+logging
+dotenv==1.0.0
+jsonschema==4.19.0     # For validating JSON data (if applicable)
+pandas==2.1.1          # For processing and analyzing data (if used)
+python-dotenv==1.0.0   # For managing environment variables (if applicable)
