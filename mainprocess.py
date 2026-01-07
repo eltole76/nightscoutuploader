@@ -3,6 +3,7 @@ import subprocess
 import logging
 from datetime import datetime
 import argparse
+import time
 from NightscoutUploader import NightscoutUploader  
 from dotenv import load_dotenv
 
@@ -45,6 +46,8 @@ def main():
     
     # Run carelink_client2_cli.py with arguments -d -v
     run_script('..\carelink-python-client\carelink_client2_cli.py', ['-d', '-v'])
+    
+    time.sleep(20)  # Wait for 20 seconds before uploading to Nightscout
     
     # Run upload_to_nightscout.py
     run_process_upload()

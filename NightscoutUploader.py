@@ -26,7 +26,7 @@ class NightscoutUploader:
         logging.getLogger().setLevel(logging.INFO)
 
     def get_json_files(self):
-        return [f for f in os.listdir(self.directory) if f.startswith('data-2025') and f.endswith('.json')]
+        return [f for f in os.listdir(self.directory) if f.startswith('data-202') and f.endswith('.json')]
 
     def read_json_file(self, filepath):
         with open(filepath, 'r') as file:
